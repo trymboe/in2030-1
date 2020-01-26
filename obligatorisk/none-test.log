@@ -1,0 +1,399 @@
+<program>
+   1: # None kan testes mot alle typer:
+   2: 
+   3: None == None
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <expr stmt>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <none literal>
+                          </none literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                  <comp opr>
+                  </comp opr>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <none literal>
+                          </none literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </expr stmt>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+   4: None != 15
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <expr stmt>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <none literal>
+                          </none literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                  <comp opr>
+                  </comp opr>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <integer literal>
+                          </integer literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </expr stmt>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+   5: 3.14 == None
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <expr stmt>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <float literal>
+                          </float literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                  <comp opr>
+                  </comp opr>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <none literal>
+                          </none literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </expr stmt>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+   6: "None" != None
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <expr stmt>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <string literal>
+                          </string literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                  <comp opr>
+                  </comp opr>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <none literal>
+                          </none literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </expr stmt>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+   7: True == None
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <expr stmt>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <boolean literal>
+                          </boolean literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                  <comp opr>
+                  </comp opr>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <none literal>
+                          </none literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </expr stmt>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+   8: [1, 2, 3] != None
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <expr stmt>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <list display>
+                            <expr>
+                              <and test>
+                                <not test>
+                                  <comparison>
+                                    <term>
+                                      <factor>
+                                        <primary>
+                                          <atom>
+                                            <integer literal>
+                                            </integer literal>
+                                          </atom>
+                                        </primary>
+                                      </factor>
+                                    </term>
+                                  </comparison>
+                                </not test>
+                              </and test>
+                            </expr>
+                            <expr>
+                              <and test>
+                                <not test>
+                                  <comparison>
+                                    <term>
+                                      <factor>
+                                        <primary>
+                                          <atom>
+                                            <integer literal>
+                                            </integer literal>
+                                          </atom>
+                                        </primary>
+                                      </factor>
+                                    </term>
+                                  </comparison>
+                                </not test>
+                              </and test>
+                            </expr>
+                            <expr>
+                              <and test>
+                                <not test>
+                                  <comparison>
+                                    <term>
+                                      <factor>
+                                        <primary>
+                                          <atom>
+                                            <integer literal>
+                                            </integer literal>
+                                          </atom>
+                                        </primary>
+                                      </factor>
+                                    </term>
+                                  </comparison>
+                                </not test>
+                              </and test>
+                            </expr>
+                          </list display>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                  <comp opr>
+                  </comp opr>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <none literal>
+                          </none literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </expr stmt>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+   9: {"Ja":17, "Nei":9, "Vet ikke":1} == None
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <expr stmt>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <dict display>
+                            <string literal>
+                            </string literal>
+                            <expr>
+                              <and test>
+                                <not test>
+                                  <comparison>
+                                    <term>
+                                      <factor>
+                                        <primary>
+                                          <atom>
+                                            <integer literal>
+                                            </integer literal>
+                                          </atom>
+                                        </primary>
+                                      </factor>
+                                    </term>
+                                  </comparison>
+                                </not test>
+                              </and test>
+                            </expr>
+                            <string literal>
+                            </string literal>
+                            <expr>
+                              <and test>
+                                <not test>
+                                  <comparison>
+                                    <term>
+                                      <factor>
+                                        <primary>
+                                          <atom>
+                                            <integer literal>
+                                            </integer literal>
+                                          </atom>
+                                        </primary>
+                                      </factor>
+                                    </term>
+                                  </comparison>
+                                </not test>
+                              </and test>
+                            </expr>
+                            <string literal>
+                            </string literal>
+                            <expr>
+                              <and test>
+                                <not test>
+                                  <comparison>
+                                    <term>
+                                      <factor>
+                                        <primary>
+                                          <atom>
+                                            <integer literal>
+                                            </integer literal>
+                                          </atom>
+                                        </primary>
+                                      </factor>
+                                    </term>
+                                  </comparison>
+                                </not test>
+                              </and test>
+                            </expr>
+                          </dict display>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                  <comp opr>
+                  </comp opr>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <none literal>
+                          </none literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </expr stmt>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+</program>
+
+None == None
+None != 15
+3,140000 == None
+"None" != None
+True == None
+[1, 2, 3] != None
+{"Ja":17, "Nei":9, "Vet ikke":1} == None

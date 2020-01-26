@@ -1,0 +1,26 @@
+"Testing plus expressions" ==>
+Trace line 1: 'Testing plus expressions'
+10+10 ==>
+Trace line 2: 20
+10-10 ==>
+Trace line 3: 0
+10*2 ==>
+Trace line 4: 20
+10/3 ==>
+Trace line 5: 3.0
+[1, 2, 3, 4]*2 ==>
+Trace line 6: [1, 2, 3, 4, 1, 2, 3, 4]
+{(no.uio.ifi.asp.parser.AspString@4ccabbaa, no.uio.ifi.asp.parser.AspExpr@4bf558aa)} ==>
+Trace line 7: {('test1', 1), ('test2', 100), 
+1+1+1+1+1+1+1+1 ==>
+Trace line 8: 8
+False or False ==>
+Trace line 9: False
+False and True ==>
+Trace line 10: False
+True or False or False ==>
+Trace line 11: True
+"" and not ({}) ==>
+Trace line 12: ''
+[] or 0 ==>
+Trace line 13: 0

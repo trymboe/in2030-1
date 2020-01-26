@@ -1,0 +1,16 @@
+   1: # I Asp får tall ikke lov å starte med sifferet 0, men
+   2: # selve tallet 0 er selvfølgelig et unntak.
+   3: # (I Python 2 er det anderledes; da brukes innledende 0-siffer
+   4: # til å angi at tallet er på oktal form.)
+   5: 
+   6: a = 0   
+Scanner: name token on line 6: a
+Scanner: = token on line 6
+Scanner: integer literal token on line 6: 0
+Scanner: NEWLINE token on line 6
+   7: a = 04  
+Scanner: name token on line 7: a
+Scanner: = token on line 7
+Scanner: integer literal token on line 7: 4
+Scanner: NEWLINE token on line 7
+Scanner: E-o-f token

@@ -1,0 +1,67 @@
+Trace line 1: func eval
+Trace line 5: Call function heiwith params: [10]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [10]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [9]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [9]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [8]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [8]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [7]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [7]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [6]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [6]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [5]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [5]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [4]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [4]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [3]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [3]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [2]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [2]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [1]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [1]
+Trace line 3: if stmt
+Trace line 4: Call function heiwith params: [0]
+Trace line 1: evalFuncCall
+Trace line 2: Call function printwith params: [0]
+Trace line 3: if stmt
+Trace line 4: Asp return 
+Trace line 4: Asp return 
+Trace line 4: Asp return 
+Trace line 4: Asp return 
+Trace line 4: Asp return 
+Trace line 4: Asp return 
+Trace line 4: Asp return 
+Trace line 4: Asp return 
+Trace line 4: Asp return 
+Trace line 4: Asp return 
+Trace line 7: func eval
+Trace line 18: Call function powwith params: [10, 2]
+Trace line 7: evalFuncCall
+Trace line 8: if stmt
+Trace line 9: Call function printwith params: ['if']
+Trace line 10: Call function powwith params: [10, 1]
+Trace line 7: evalFuncCall
+Trace line 8: if stmt
+Trace line 15: Call function printwith params: ['else']
+Trace line 16: Asp return 
+Trace line 10: Asp return 
+Trace line 18: Call function printwith params: [100]

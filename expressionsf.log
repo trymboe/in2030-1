@@ -1,0 +1,1123 @@
+   1: "Testing integer expressions:"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Testing integer expressions:" ==>
+Trace line 1: 'Testing integer expressions:'
+   2: 42
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+42 ==>
+Trace line 2: 42
+   3: -1017
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <factor prefix>
+            </factor prefix>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+- 1017 ==>
+Trace line 3: -1017
+   4: -2 + 5 * 7
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <factor prefix>
+            </factor prefix>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+          <term opr>
+          </term opr>
+          <factor>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+            <factor opr>
+            </factor opr>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+- 2 + 5 * 7 ==>
+Trace line 4: 33
+   5: 8 // 2 * (2+2)
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+            <factor opr>
+            </factor opr>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+            <factor opr>
+            </factor opr>
+            <primary>
+              <atom>
+                <inner expr>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                            <term opr>
+                            </term opr>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </inner expr>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+8 // 2 * (2 + 2) ==>
+Trace line 5: 16
+   6: 
+   7: "Testing float expressions:"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Testing float expressions:" ==>
+Trace line 7: 'Testing float expressions:'
+   8: 42.0
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <float literal>
+                </float literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+42,000000 ==>
+Trace line 8: 42.0
+   9: -1017.1
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <factor prefix>
+            </factor prefix>
+            <primary>
+              <atom>
+                <float literal>
+                </float literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+- 1017,100000 ==>
+Trace line 9: -1017.1
+  10: 1.4142 * 1.4142
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <float literal>
+                </float literal>
+              </atom>
+            </primary>
+            <factor opr>
+            </factor opr>
+            <primary>
+              <atom>
+                <float literal>
+                </float literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+1,414200 * 1,414200 ==>
+Trace line 10: 1.9999616399999998
+  11: -2 + 5.0 * 7
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <factor prefix>
+            </factor prefix>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+          <term opr>
+          </term opr>
+          <factor>
+            <primary>
+              <atom>
+                <float literal>
+                </float literal>
+              </atom>
+            </primary>
+            <factor opr>
+            </factor opr>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+- 2 + 5,000000 * 7 ==>
+Trace line 11: 33.0
+  12: 
+  13: "Testing string expressions"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Testing string expressions" ==>
+Trace line 13: 'Testing string expressions'
+  14: "Abc"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Abc" ==>
+Trace line 14: 'Abc'
+  15: "x" * 10
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+            <factor opr>
+            </factor opr>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"x" * 10 ==>
+Trace line 15: 'xxxxxxxxxx'
+  16: "Abra" + "ka" + "dabra"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+          <term opr>
+          </term opr>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+          <term opr>
+          </term opr>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Abra" + "ka" + "dabra" ==>
+Trace line 16: 'Abrakadabra'
+  17: 
+  18: "Testing boolean expressions"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Testing boolean expressions" ==>
+Trace line 18: 'Testing boolean expressions'
+  19: not False
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <boolean literal>
+                </boolean literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+not False ==>
+Trace line 19: True
+  20: "To be" or "not to be"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"To be" or "not to be" ==>
+Trace line 20: 'To be'
+  21: "Yes" and 3.14
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <float literal>
+                </float literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Yes" and 3,140000 ==>
+Trace line 21: 3.14
+  22: False or True or 144 or "?"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <boolean literal>
+                </boolean literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <boolean literal>
+                </boolean literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+False or True or 144 or "?" ==>
+Trace line 22: True
+  23: 
+  24: "Testing comparisons"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Testing comparisons" ==>
+Trace line 24: 'Testing comparisons'
+  25: 1 < 0
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+        <comp opr>
+        </comp opr>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+1 < 0 ==>
+Trace line 25: False
+  26: 1 <= 2 <= 3
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+        <comp opr>
+        </comp opr>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+        <comp opr>
+        </comp opr>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <integer literal>
+                </integer literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+1 <= 2 <= 3 ==>
+Trace line 26: True
+  27: 
+  28: "Testing lists"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Testing lists" ==>
+Trace line 28: 'Testing lists'
+  29: []
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <list display>
+                </list display>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+[] ==>
+Trace line 29: []
+  30: [-1,0,1]*(2)
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <list display>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <factor prefix>
+                              </factor prefix>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </list display>
+              </atom>
+            </primary>
+            <factor opr>
+            </factor opr>
+            <primary>
+              <atom>
+                <inner expr>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </inner expr>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+[- 1, 0, 1] * (2) ==>
+Trace line 30: [-1, 0, 1, -1, 0, 1]
+  31: [101,102,103][1]
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <list display>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </list display>
+              </atom>
+              <primary suffix>
+                <subscription>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </subscription>
+              </primary suffix>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+[101, 102, 103][1] ==>
+Trace line 31: 102
+  32: 
+  33: "Testing dictionaries"
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <string literal>
+                </string literal>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+"Testing dictionaries" ==>
+Trace line 33: 'Testing dictionaries'
+  34: {"A": "a", "B": 1+2}
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <dict display>
+                  <string literal>
+                  </string literal>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <string literal>
+                                  </string literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                  <string literal>
+                  </string literal>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                            <term opr>
+                            </term opr>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </dict display>
+              </atom>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+{"A":"a", "B":1 + 2} ==>
+Trace line 34: {'A': 'a', 'B': 3}
+  35: {"Ja": 1, "Nei": 0}["Ja"]
+<expr>
+  <and test>
+    <not test>
+      <comparison>
+        <term>
+          <factor>
+            <primary>
+              <atom>
+                <dict display>
+                  <string literal>
+                  </string literal>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                  <string literal>
+                  </string literal>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </dict display>
+              </atom>
+              <primary suffix>
+                <subscription>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <string literal>
+                                  </string literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </subscription>
+              </primary suffix>
+            </primary>
+          </factor>
+        </term>
+      </comparison>
+    </not test>
+  </and test>
+</expr>
+{"Ja":1, "Nei":0}["Ja"] ==>
+Trace line 35: 1
